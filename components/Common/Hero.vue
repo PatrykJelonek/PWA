@@ -12,6 +12,7 @@ export default {
 
 <style scoped>
 .hero {
+  box-sizing: border-box;
   width: 100vw;
   height: 150px;
   background: rgba(0, 0, 0, .1);

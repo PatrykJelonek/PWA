@@ -25,7 +25,6 @@
             </li>
           </ul>
         </div>
-
       </div>
       <div v-else>
         <h2>Nie udało się pobrać!</h2>
@@ -35,8 +34,11 @@
 </template>
 
 <script>
+import Gallery from "../../../components/Gallery.vue";
+import BigImage from "../../../components/BigImage.vue";
 export default {
   name: "index",
+  components: {BigImage, Gallery},
   layout: 'custom',
 
   data() {
