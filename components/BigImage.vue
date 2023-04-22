@@ -66,7 +66,7 @@ export default {
 .close-button-container {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   position: absolute;
   top: 25px;

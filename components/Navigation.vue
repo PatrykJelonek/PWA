@@ -10,6 +10,12 @@
           <NuxtLink to="onas" class="navigation__link">About</NuxtLink>
         </li>
         <li class="navigation__item">
+          <NuxtLink to="/cars" class="navigation__link">Cars</NuxtLink>
+        </li>
+        <li class="navigation__item">
+          <NuxtLink to="/pokemons" class="navigation__link">Pokemons</NuxtLink>
+        </li>
+        <li class="navigation__item">
           <a @click="clickMe()">Click Me</a>
         </li>
       </ul>

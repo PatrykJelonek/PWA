@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation></Navigation>
-
+    <CommonHero></CommonHero>
     <main class="main">
       <Nuxt />
     </main>
@@ -9,12 +9,9 @@
 </template>
 
 <script>
-import Navigation from "../components/Navigation.vue";
-
 export default {
   name: "custom",
   layout: "custom",
-  components: {Navigation}
 }
 </script>
 
