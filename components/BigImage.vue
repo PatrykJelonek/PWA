@@ -1,22 +1,24 @@
 <template>
-  <div class="container" v-bind:class="canShow ? 'show' : 'hide'">
+  <div class="container" v-bind:class="store.canShow ? 'show' : 'hide'">
     <div class="image-container">
       <div class="close-button-container">
-        <em class="fa-solid fa-xmark close-btn" @click="removeCurrentImage"></em>
+        <em class="fa-solid fa-xmark close-btn" @click="store.removeBigImageSrc"></em>
       </div>
-      <img class="big-image" :src="currentImage" alt="bigimage" @click="removeCurrentImage()">
+      <img class="big-image" :src="store.getBigImageSrc" alt="bigimage" @click="store.removeBigImageSrc">
     </div>
   </div>
 </template>
 
 <script>
 import {mapMutations} from 'vuex';
+import { useGallery } from '../store/gallery_pinia.js';
 
 export default {
   name: "BigImage",
   data() {
     return {
       img: null,
+      store: useGallery(),
     }
   },
 

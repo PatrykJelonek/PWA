@@ -4,6 +4,7 @@
     <CommonHero></CommonHero>
     <main class="main">
       <Nuxt />
+      <BigImage />
     </main>
   </div>
 </template>

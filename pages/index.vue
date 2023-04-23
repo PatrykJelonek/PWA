@@ -3,7 +3,6 @@
     <h1>Home</h1>
 <!--    <BigImage img="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"></BigImage>-->
     <Gallery :images="images"></Gallery>
-    <BigImage />
   </div>
 </template>
 
