@@ -2,7 +2,7 @@
   <div class="gallery">
     <div class="gallery__preview">
       <em class="fa-solid fa-chevron-left" @click="decreaseCurrentImageIndex"></em>
-      <div class="gallery__image_container" @click="setCurrentImage(images[currentIndex].src)">
+      <div class="gallery__image_container" @click="store.setBigImageSrc(images[currentIndex].src)">
         <div class="gallery__image_container_over">
           <em class="fa-solid fa-magnifying-glass-plus" @click="decreaseCurrentImageIndex"></em>
         </div>
@@ -21,6 +21,7 @@
 <script>
 import BigImage from "./BigImage.vue";
 import {mapMutations} from 'vuex';
+import { useGallery } from './../store/gallery_pinia.js';
 
 export default {
   name: "Gallery",
@@ -30,6 +31,7 @@ export default {
   data() {
     return {
       currentIndex: 0,
+      store: useGallery(),
     }
   },
 
