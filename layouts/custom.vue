@@ -5,6 +5,7 @@
     <main class="main">
       <Nuxt />
       <BigImage />
+      <CommonLiveChat />
     </main>
   </div>
 </template>
