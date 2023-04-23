@@ -4,14 +4,14 @@
       <div class="chat_container">
         <div class="chat_header">
           <h2>Chat</h2>
-          <div class="chat_closer">x</div>
+          <div class="chat_closer" @click="showChat = false">x</div>
         </div>
         <div class="chat_content"></div>
         <div class="chat_input"></div>
       </div>
     </template>
     <template v-else>
-      <div class="open_button">Chat</div>
+      <div class="open_button" @click="showChat = true">Chat</div>
     </template>
   </div>
 </template>
